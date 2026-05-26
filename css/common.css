@@ -45,3 +45,10 @@ article h4 {
 	color: #8fc41f;
 }
 
+a:link, a:visited {
+color: #157dd6;
+text-decoration: none;
+}
+a:hover {
+color: #367f93;
+}
