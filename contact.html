@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <title>シンクスシステム株式会社</title>
@@ -13,8 +13,6 @@
   <header>
     <h1>シンクスシステム株式会社のオフィシャルサイトです</h1>
     <p><a href="index.html"><img src="images/logo.png" alt="シンクスシステム株式会社" width="400" height="60"></a></p>
-    <!-- メインナビゲーション -->
-    
     <nav id="global_navi">
       <ul>
         <li><a href="index.html" id="home">トップページ</a></li>
@@ -23,64 +21,86 @@
         <li><a href="company.html" id="company">会社概要</a></li>
         <li><a href="contact.html" id="contact">お問い合わせ</a></li>
       </ul>
-      <!-- / メインナビゲーション --> 
     </nav>
   </header>
   <div id="main_visual">
     <h2><img src="images/contact_visual.png" alt="お客様に「最良」をご提案。" width="900" height="180" /></h2>
   </div>
-  
-  <!-- メイン 右 -->
+
   <main>
     <h3 class="heading">お問い合わせ<span>Contact Us</span></h3>
-    <div class="main_contents"> 
-      <!--①8章で下記を入力する。テーブルは用意されているものを使っても可-->
-        <table>
-          <tr>
-            <th></th>
-            <td></td>
-          </tr>
-          <tr>
-            <th></th>
-            <td></td>
-          </tr>
-          <tr>
-            <th></th>
-            <td></td>
-          </tr>
-          <tr>
-            <th rowspan="3"></th>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
-          <tr>
-            <th></th>
-            <td></td>
-          </tr>
-          <tr>
-            <th></th>
-            <td></td>
-          </tr>
-          <tr>
-            <th></th>
-            <td></td>
-          </tr>
-          <tr>
-            <th></th>
-            <td></td>
-          </tr>
-        </table>
-      </form>
-      <!--①ここまで--> 
+    <div class="main_contents">
+  <form action="mailto:xxx@xx.jp" method="post">
+<input type="hidden" name="mode" value="regchk" />
+<table aria-label="コンタクト">
+<tr>
+<th>お名前</th>
+<td><input type="text" name="name" id="name" size="40" value="" aria-label="お名前"></td>
+</tr>
+<tr>
+<th><label for="name2">フリガナ</label></th>
+<td><input type="text" name="name2" id="name2" size="40" value=""></td>
+</tr>
+<tr>
+<th>性別</th>
+<td><input type="radio" name="gender" id="man" value="man">
+<label for="man">男性</label>
+<input type="radio" name="gender" id="female" value="female">
+<label for="female">女性</label></td>
+</tr>
+<tr>
+<th rowspan="3">住所</th>
+<td><label for="zipcode">郵便番号</label>
+<input type="text" name="zipcode" size="10" value=""
+id="zipcode"></td>
+</tr>
+<tr>
+<td><label for="divisions">都道府県</label>
+<select name="divisions" id="divisions" aria-label="都道府県">
+<option>選択してください</option>
+<option value="Tochigi">栃木県</option>
+<option value="Gunma">群馬県</option>
+<option value="Ibaraki">茨城県</option>
+<option value="Saitama">埼玉県</option>
+<option value="Tokyo">東京都</option>
+<option value="Chiba">千葉県</option>
+<option value="Kanagawa">神奈川県</option>
+</select></td>
+</tr>
+<tr>
+<td><label for="address">市区町村・番地</label><br>
+<input type="text" name="address" size="60" value="" id="address"></td>
+</tr>
+<tr>
+<th>メールアドレス</th>
+<td><label for="mail">メールアドレス</label>
+<input type="text" name="mail" id="mail" size="35" value=""></td>
+</tr>
+<tr>
+<th>お問い合わせ種別</th>
+<td><input type="checkbox" name="inquiry_type" id="solutions">
+<label for="solutions">ソリューション</label>
+<input type="checkbox" name="inquiry_type" id="cloud_services">
+<label for="cloud_services">クラウド</label>
+<input type="checkbox" name="inquiry_type" id="consulting">
+<label for="consulting">コンサルティング</label></td>
+</tr>
+<tr>
+<th>お問い合わせ内容</th>
+<td><textarea name="message" id="message" aria-label="お問い合わせ内容" rows="15" cols="35">
+</textarea></td>
+</tr>
+<tr>
+<th>内容確認</th>
+<td><input type="image" src="images/send.png" alt="送信" aria-label="送信" width="223"
+height="64" /></td>
+</tr>
+</table>
+</form>
     </div>
   </main>
   <div id="sidebar">
-    
+
     <h3>Menu</h3>
     <nav id="local_navi">
       <ul class="info">
@@ -94,7 +114,7 @@
     </nav>
     <aside>
 	<p><a href="recruit.html"><img src="images/side_banner1_df.jpg" alt="採用情報" width="233" height="120"></a></p>
-	<p><a href="contact.html"><img src="images/side_banner2_df.jpg" width="233" height="64"></a></p>
+	<p><a href="contact.html"><img src="images/side_banner2_df.jpg" alt="お問い合わせはこちら" width="233" height="64"></a></p>
 　　</aside>
   </div>
 </div>
@@ -109,7 +129,7 @@
     </ul>
     <p id="copy"><small>&copy; Copyright シンクスシステム株式会社 All Rights Reseved.</small></p>
   </footer>
-  <!-- / フッター --> 
+  <!-- / フッター -->
 
 </body>
 </html>
